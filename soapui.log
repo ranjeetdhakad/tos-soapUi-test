@@ -1,0 +1,16 @@
+2016-09-20 12:18:37,076 WARN  [SoapUI] Missing folder [C:\Users\dhakaran\git\GradleTest\ext] for external libraries
+2016-09-20 12:18:37,331 INFO  [DefaultSoapUICore] initialized soapui-settings from [C:\Users\dhakaran\soapui-settings.xml]
+2016-09-20 12:18:38,148 INFO  [PluginManager] 0 plugins loaded in 1 ms
+2016-09-20 12:18:38,148 INFO  [DefaultSoapUICore] All plugins loaded
+2016-09-20 12:18:39,373 INFO  [WsdlProject] Loaded project from [file:/C:/MDM/TOS/Kesko-TOS-soapui-project.xml]
+2016-09-20 12:18:39,539 INFO  [WsdlProject] Loaded project from [file:/C:/MDM/TOS/Kesko-TOS-soapui-project.xml]
+2016-09-20 12:18:39,540 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [Kesko TOS]
+2016-09-20 12:18:39,540 INFO  [SoapUITestCaseRunner] Running TestCase [TestJavaCode]
+2016-09-20 12:18:39,556 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestJavaCode]
+2016-09-20 12:18:39,561 INFO  [SoapUITestCaseRunner] running step [Get Propostions]
+2016-09-20 12:18:42,754 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status VALID
+2016-09-20 12:18:42,754 INFO  [SoapUITestCaseRunner] Assertion [JsonPath Count] has status FAILED
+2016-09-20 12:18:42,754 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Comparison failed for path [$.offerPropositionList[*].proposition.id], expecting [8], actual was [0]
+2016-09-20 12:18:42,754 ERROR [SoapUITestCaseRunner] Get Propostions failed, exporting to [C:/MDM/TOS/TOSTEST_RESULT/\TestSuite_for_TOS_POS-TestJavaCode-Get_Propostions-0-FAILED.txt]
+2016-09-20 12:18:42,765 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestJavaCode], time taken: 2092ms, status: FAILED
+2016-09-20 12:18:42,765 INFO  [SoapUITestCaseRunner] TestCase [TestJavaCode] finished with status [FAILED] in 2092ms
