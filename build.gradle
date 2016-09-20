@@ -65,7 +65,7 @@ dependencies {
     // The production code uses the SLF4J logging API at compile time
     compile 'org.slf4j:slf4j-api:1.7.21'
     compile( group: 'com.fifesoft', name: 'rsyntaxtextarea', version: '2.5.3' )
-     compile( group: 'com.jgoodies', name: 'forms', version: '1.0.7' )
+     compile( group: 'com.jgoodies', name: 'forms', version: '1.1.0' )
     compile( group: 'com.smartbear.soapui', name: 'soapui', version: '5.2.1' )
     {
    exclude( module: 'jxbrowser' )
