@@ -28,6 +28,38 @@ sourceSets {
         runtimeClasspath = output + compileClasspath
     }
     }
+    configurations {
+    soapUiTestCompile.extendsFrom testCompile
+    soapUiTestRuntime.extendsFrom testRuntime
+   
+}
+
+test {
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat = 'full'
+        showStandardStreams = true
+    }
+}
+ task soapUiTest(type : Test) {
+    description = 'Runs the SoapUi tests.'
+    group = 'verification'
+    classpath = sourceSets.soapUiTest.runtimeClasspath
+    testClassesDir = sourceSets.soapUiTest.output.classesDir
+    //testResultsDir = file("$testResultsDir/integration")
+
+    testLogging {
+        events "passed", "skipped", "failed", "standardOut", "standardError"
+        exceptionFormat = 'full'
+    }
+
+    //If you want to ensure that integration tests are run every time when you invoke
+    //this task, uncomment the following line.
+    //outputs.upToDateWhen { false }
+/*    jacoco {
+        destinationFile = file("$buildDir/jacoco/jacocoIntegTest.exec")
+    }*/
+}   
 // In this section you declare the dependencies for your production and test code
 dependencies {
     // The production code uses the SLF4J logging API at compile time
