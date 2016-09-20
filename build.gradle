@@ -23,7 +23,7 @@ repositories {
 
 sourceSets {
     soapUiTest {
-        java.srcDirs 'src/soapUiTest'
+        java.srcDirs 'src/soapUiTest/java'
         compileClasspath = sourceSets.main.output + configurations.testRuntime
         runtimeClasspath = output + compileClasspath
     }
