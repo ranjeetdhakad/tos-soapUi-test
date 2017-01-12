@@ -4,8 +4,24 @@
  *
  * @author dhakaran, @date 7/14/16 4:05 PM
  */
+
 public class Library {
+	
+	/**
+     * Getter for created.
+     * 
+     * @return 
+     */
     public boolean someLibraryMethod() {
         return true;
+    }
+    
+    /* Setter for created.
+     * 
+     * @param test
+     * @param resetter
+     */
+    public void someLibraryMethod2(String test,String test2) {
+        
     }
 }

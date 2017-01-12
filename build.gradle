@@ -21,6 +21,11 @@ repositories {
     jcenter()
 }
 
+  /*plugins {
+    id "java"
+    id "jacoco"
+  } */
+  
 sourceSets {
     soapUiTest {
         java.srcDirs 'src/soapUiTest/java'
@@ -33,7 +38,14 @@ sourceSets {
     soapUiTestRuntime.extendsFrom testRuntime
    
 }
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from javadoc.destinationDir
+} 
 
+artifacts {
+    archives javadocJar
+}
 test {
     testLogging {
         events "passed", "skipped", "failed", "standardOut", "standardError"
