@@ -6,22 +6,24 @@
  */
 
 public class Library {
-	
+	/* Setter for created.
+     * 
+     * @param test5
+     * @param resetter
+     * @return true
+     * @throws InvalidOrganizationFileContentException
+     */
+    public void someLibraryMethod2(String test,String test2) {
+        
+    }
 	/**
      * Getter for created.
      * 
-     * @return 
+     * @throws InvalidOrganizationFileContentException
      */
     public boolean someLibraryMethod() {
         return true;
     }
     
-    /* Setter for created.
-     * 
-     * @param test
-     * @param resetter
-     */
-    public void someLibraryMethod2(String test,String test2) {
-        
-    }
+    
 }
